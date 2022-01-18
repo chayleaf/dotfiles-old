@@ -1,0 +1,1 @@
+Firefox transparency also requires [blurredfox](https://github.com/manilarome/blurredfox) and my fork of [DarkReader](https://github.com/pavlukivan/darkreader), too lazy to add it all to the config for now

@@ -10,6 +10,7 @@
   overflow: auto !important;
   position: relative !important;
 }
+
 html:before, html:after {
   content: "";
   display: table;
@@ -26,8 +27,13 @@ html:before, html:after {
 }
 
 @-moz-document url-prefix(about:), url-prefix(chrome:), url-prefix(moz-) {
+  :root {
+    /* allow browser uis to be smallers than viewport size */
+    min-height: 100% !important;
+  }
   :root>* {
     background: rgba(36,16,26,.75) !important;
+    min-height: 100% !important;
   }
   .logo-and-wordmark {
     display: none !important;	
